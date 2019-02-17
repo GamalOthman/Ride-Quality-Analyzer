@@ -20,8 +20,22 @@ You can observe such rules it in the code.
 ## Supported Android Apps
 
 Till now, only this app is supported:
+
 * Accelerometer Analyzer: http://tinyurl.com/y4swylfs
 
-As every app generates different output. analyzeFile() function need to be modified to to adapt to the data.
-I will add more supported apps in the near future.
+## Recording
+
+### Accelerometer Analyzer app
+
+Open the app and tap on this icon 💾, then tap on "Start Writing". 
+The app will start saving a file with a name like "accel__1.txt". You can find this file in a directory called "accelerometerDir" mostly in your phone storage.
+
+When recording, make sure the phone is not moving. The code will dismiss the first 5 seconds of recording and also the last 5 ones, so do not worry about that.
+
+**Important note:** You must enable "Remove Earth Gravity" feature in the app settings in order for code to work properly. Further developments of the code will implement this feature.
+
+## Notes
+
+As every app generates different output. analyzeFile() function in the code need to be modified to to adapt to the data.
+So I will add more supported apps in the near future.
 
